@@ -406,7 +406,8 @@
             }
             
             if (this.options.ulClasses) {
-                this.$ul.addClass(this.options.ulClasses);
+                var klasses = this.options.ulClasses.split(".").join("")
+                this.$ul.addClass(klasses);
             }
 
             // Set max height of dropdown menu to activate auto scrollbar.
