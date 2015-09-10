@@ -757,6 +757,11 @@
             if (this.options.enableClickableOptGroups) {
                 $li.addClass('multiselect-group-clickable');
             }
+            
+            var $group = $(group);
+            if ($group.attr('class')) {
+                $li.addClass($group.attr('class'));
+            }            
 
             this.$ul.append($li);
 
