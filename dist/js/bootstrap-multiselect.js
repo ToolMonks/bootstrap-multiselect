@@ -685,6 +685,8 @@
             var $li = $(this.options.templates.li);
             var $label = $('label', $li);
             $label.addClass(inputType);
+            
+            $li.addClass( $element.attr("class") );
 
             if (this.options.enableHTML) {
                 $label.html(" " + label);
