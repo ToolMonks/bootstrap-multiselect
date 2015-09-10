@@ -404,6 +404,10 @@
             if (this.options.dropRight) {
                 this.$ul.addClass('pull-right');
             }
+            
+            if (this.options.ulClasses) {
+                this.$ul.addClass(this.options.ulClasses);
+            }
 
             // Set max height of dropdown menu to activate auto scrollbar.
             if (this.options.maxHeight) {
